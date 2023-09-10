@@ -1,0 +1,53 @@
+*,:after,:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: none;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.2rem;
+}
+
+#button:hover {
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 10px #333;
+}
+
+.image {
+    width: 75px;
+    height: 75px;
+    animation: pumpkinFall 5s linear infinite;
+    position: absolute;
+    top: 0;
+}
+
+@keyframes pumpkinFall {
+    0% {
+        transform: translateY(-5vh);
+    }
+    100% {
+        transform: translateY(110vh);
+    }
+}
